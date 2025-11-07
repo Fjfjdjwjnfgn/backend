@@ -4,7 +4,7 @@ const varsToCheck = [
 	'DB_FILE_NAME',
 	'PORT',
 	'AUTH_NAME',
-	'AUTH_PASSSWORD',
+	'AUTH_PASSWORD',
 	'BASE_PATH',
 ];
 
@@ -19,6 +19,6 @@ export const getPort = () => process.env.PORT!;
 
 export const getAuthName = () => process.env.AUTH_NAME!;
 
-export const getAuthPassword = () => process.env.AUTH_PASSSWORD!;
+export const getAuthPassword = () => process.env.AUTH_PASSWORD!;
 
 export const getBasePath = () => process.env.BASE_PATH!;
