@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"skipLibCheck": true,
+		"paths": {
+			"@config": ["./src/config.ts"],
+			"@db": ["./src/db"]
+		}
+	}
+}

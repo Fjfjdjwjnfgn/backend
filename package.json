@@ -1,0 +1,34 @@
+{
+  "name": "news-backend",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "pm2:dev": "pm2 start bun --name=\"ruspixel-news\" -- dev",
+    "pm2:start": "pm2 start bun --name=\"ruspixel-news\" -- start",
+    "pm2:stop": "pm2 delete ruspixel-news",
+    "pm2:logs": "pm2 logs ruspixel-news"
+  },
+  "author": "Darkness",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.2",
+    "@libsql/client": "^0.14.0",
+    "@types/node": "^22.10.2",
+    "@types/uniqid": "^5.3.4",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.2",
+    "hono": "^4.6.14",
+    "marked": "^15.0.4",
+    "pm2": "^5.4.3",
+    "uniqid": "^5.4.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.1",
+    "tsx": "^4.19.2",
+    "@types/bun": "latest"
+  }
+}
